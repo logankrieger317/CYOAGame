@@ -1,0 +1,61 @@
+/* Colors */
+:root {
+    --green: #04AA6D; /*60%*/
+    --orange: #ffa500; /*30%*/
+    --aquamarine: #7fffd4; /*10%*/
+}
+
+/*Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Mobile first responsive layout */
+
+header {
+    background-color: var(--orange);
+    color: var(--aquamarine);
+    padding: 20px;
+    text-align: center;
+}
+/*header {
+    background-color: var(#04AA6D);
+    color: var(--aquamarine);
+    padding: 20px;
+    text-align: center;
+}
+#pageTitle {
+
+    color: #008CBA;    
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button1 {background-color: #04AA6D;} /* Green *//*
+  .button2 {background-color: #008CBA;} /* Blue *//*
+  .button3 {background-color: #ffff00;} /* Yellow */
+/*
+#storyStart {
+font-style: italic;
+color: #008CBA;
+}
+
+
+  
