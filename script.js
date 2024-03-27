@@ -53,17 +53,19 @@ if(enterCabin == true) {
         alert("You ask the portrait and the old man tells that one apple only allows you one piece of information. You go back to the kitchen to get another apple from the hag but by the time you come back the old man has disapperead from the portrait. You get mad and throw the apple at his painting, causing the portrait to fall down and the whole hallway to shake, which sends you screaming into the woods. Game Over.")
     }
     else (lookForKey == "choice") {
-        alert("You start looking around the area until a bust head says, 'Psst, the key to the drawer is in the bookshelf next to me.' You go to the bookshelf, but it's locked too. Oh no, now what?")
+        alert("You start looking around the area until a bust head says, 'Psst, the key to the drawer is in the bookshelf next to me.' You go to the bookshelf, but it's locked too. Oh no, now what?");
     }
     //Choice 6
-    let lockedBookShelf = prompt("You keep searching around the book shelf until you see a door next to the shelf that you swear wasn't there before. You open it and hear the sound of humming. Upon further entry, you see a room filled with what looks like antique 1800s bedroom furniture. You look around at everything until you spot a gleaming silver hairbrush on the vanity and to the left you the specter of a woman with long golden hair pacing the room as if she doesn't see you. What do you do? Talk to the ghost or sneak to grab the hairbrush?")
+    let lockedBookShelf = prompt ("You keep searching around the book shelf until you see a door next to the shelf that you swear wasn't there before. You open it and hear the sound of humming. Upon further entry, you see a room filled with what looks like antique 1800s bedroom furniture. You look around at everything until you spot a gleaming silver comb on the vanity and to the left you the specter of a woman with long golden hair pacing the room as if she doesn't see you. What do you do? Talk to the ghost or sneak to grab the comb?");
     if(talkToGhost == "choice") {
         alert("You have decided to introduce yourself to spectral woman. You say 'Hello' and ask her what her name is. She stops pacing to turn and look at you, and she looks at you with a cold stare until all of a sudden she lets out a high pitched scream that causes the whole room to tremble and you to run out of the cabin screaming. Game Over.");
     if(grabHairbrush == "choice") {
-        alert("You sneak over very carefully to grab the hairbrush. Once you've got it, you introduce yourself to the woman. She stops to look at you and she notices the silver hairbrush in your hand, and you notice she's wearing a necklace with a key on it as well.")
+        alert("You sneak over very carefully to grab the comb. Once you've got it, you introduce yourself to the woman. She stops to look at you and she notices the silver comb in your hand. In return, you notice she's wearing a necklace with a key on it. She asks for you to hand her the comb and you tell her you will do it in exchange for the key. She obliges and now you have the key to the bookshelf... you hope.");
     }
     }
     //Choice 7
+    let obtainedKey = prompt ("You go back out to the hall and stick the key in the bookshelf. As you turn it, you hear the key click. You open the case to the shelf and find the silver brush. Yay! With the silver brush in hand, you had back to the wall with the portrait and look at the two hallways set before you. Which one do yo9u take? The one on the left or the one on the right?");
+    
 } 
 
 
