@@ -7,32 +7,43 @@
     <title>Key's C.Y.O.A #1</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
 
     <header> 
-        <h1 id="pageTitle">Choose Your Own Adventure!</h1>
-        <h2> Hey There 👋</h2>
-        <h3> Get ready for a fun and exciting journey 👍</h3>
+        <h1>Choose Your Own Adventure!</h1>
+        <h2> Get ready for a fun and exciting journey 👍</h2>
     </header>
 
     <body>
         <div class="content">
     
-     
+            <div class="welcomeScreen">
              <!-- Beginning Screen -->
-     
-             <p id="storyStart">Welcome to this <strong>"Choose Your Own Adventure"</strong> story. To get started click the <em>"Begin Adventure"</em> button below. Enjoy!</p>
-     
-             <button type="button1" onclick='document.getElementById("storyStart").innerHTML = "You are sailing in the ocean with your friends Pete, Jenny, and Andrew."'>Begin Adventure! </button>
+             <button type="button" class="btnClickHere" onclick ="this.style.display='none'; userNameFunction()">Please Click Here</button>
+             <h3 id="greeting"></h3>
+            <br>
+            <br>
+             <p id="storyStart" style="display: none;">Welcome to this <strong>"Choose Your Own Adventure"</strong> story. To get started click the <em>"Begin Adventure"</em> button below. Enjoy!</p>
+             <button type="button" class= "btnNext" onclick="this.style.display='none'; document.getElementById('storyStart').style.display='block'">Next</button>
+            </div>
+
+            <button type="button1" class= "btnBegin" onclick="this.style.display='none'; displayScenario()">Begin Adventure!</button>
+            <p id="scenario"></p>
         
              <!-- First Choices -->
-             <p id="Choices1">After about 15 minutes of sailing straight, the group must decide whether to travel east or west. Which direction do you decide to take?</p>
+             <p id="Choices1" style="display: none;">After about 15 minutes of sailing straight, the group must decide whether to travel east or west. Which direction do you decide to take?</p>
+             <button type="button" class= "btnNext2" onclick="this.style.display='none'; document.getElementById('Choices1').style.display='block'">Next</button>
 
              <button type="eButton" onclick='document.getElementById("Choices1").innerHTML = "You guys decide to travel east."'>Go East!</button>
              <button type="wButton" onclick='document.getElementById("Choices1").innerHTML = "You guys decide to travel west."'>Go West!</button>
+
+             <!-- Have to figure how to execute all of this, but here are more of the choices-->
+             <!-- Second Choices: If east - sail into a storm but manage to take cover: in a cave or in a chack on a mysterios island?
+                If west - come to a quiet, calm spot where Pete and Jenny decide that want to go for a swim, while Andrew decides he'd like to sail a little further down the way to explore. Do you join Pete and Jenny in the water for a swim or stay with Andrew to sail a little further to explore?
+                Third Choices: If chose cave-->
         </div>
         
-        <script src="" async defer></script>
+        <script src="script.js" async defer></script>
     </body>
 </html>
